@@ -1,7 +1,7 @@
-import './App.css';
+import Routes from './routes/Routes';
 
 const App = () => {
-  return <div>hello</div>;
+  return <Routes />;
 };
 
 export default App;
