@@ -1,12 +1,12 @@
 import { LoginLayoutRoutes, MainLayoutRoutes } from './routeTypes';
 
-import Blog from '../Pages/Blog';
-import Dashboard from '../Pages/Dashboard';
-import Login from '../Pages/Login';
+import Blog from '../Pages/Blog/Blog';
+import Dashboard from '../Pages/Dashboard/Dashboard';
+import Login from '../Pages/Login/Login';
 import LoginLayout from '../Layouts/loginLayout/LoginLayout';
 import MainLayout from '../Layouts/mainLayout/MainLayout';
-import ProductsPage from '../Pages/ProductsPage';
-import UsersPage from '../Pages/UsersPage';
+import ProductsPage from '../Pages/ProductsPage/ProductsPage';
+import UsersPage from '../Pages/UsersPage/UsersPage';
 
 export const LOGIN_PATH = '/login';
 
