@@ -3,6 +3,16 @@ import { sample } from 'lodash';
 
 // ----------------------------------------------------------------------
 
+export type productsProps = {
+  id: string;
+  cover: string;
+  name: string;
+  price: number;
+  priceSale: number | null;
+  colors: string[];
+  status: string | undefined;
+};
+
 const PRODUCT_NAME = [
   'Nike Air Force 1 NDESTRUKT',
   'Nike Space Hippie 04',
@@ -55,3 +65,4 @@ const products = [...Array(24)].map((_, index) => {
 });
 
 export default products;
+
