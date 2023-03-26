@@ -6,10 +6,14 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import products from '../../_mock/products';
+import { productsProps } from '../../_mock/products';
 
-const ProductCard = () => {
-  return products.map((product) => (
+type product = {
+  product: productsProps;
+};
+
+const ProductCard = ({ product }: product) => {
+  return (
     <Card key={product.id} sx={{ maxWidth: 345 }}>
       <CardMedia sx={{ height: 250 }} image={product.cover} title={product.name} />
       <CardContent>
@@ -26,7 +30,7 @@ const ProductCard = () => {
         )}
       </CardContent>
     </Card>
-  ));
+  );
 };
 
 export default ProductCard;
